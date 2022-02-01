@@ -1,0 +1,36 @@
+nfooter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  width: 30%;
+  vertical-align: middle;
+  line-height: 25px;
+  padding-top: 10px;
+  margin: auto;
+}
+footer div a {
+  text-decoration: none;
+  color: white;
+}
+footer div img {
+  margin-right: 20px;
+  width: 25px;
+  height: 25px;
+}
+footer div img#rs-icon {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

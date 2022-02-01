@@ -6,7 +6,7 @@ import Books from "./components/Books";
 import Characters from "./components/Characters";
 import Houses from "./components/Houses";
 
-const routes = {
+const routes: {[index: string]:any} = {
     '/'    : MainPage,
     '/books': Books,
     '/characters': Characters,
@@ -26,8 +26,7 @@ const router = async () => {
 
     let request = Utils.parseRequestURL();
 
-
-    let parsedURL = (request.resource ? '/' + request.resource : '/') + (request.id ? '/:id' : '') + (request.verb ? '/' + request.verb : '')
+    let parsedURL: string = (request.resource ? '/' + request.resource : '/') + (request.id ? '/:id' : '') + (request.verb ? '/' + request.verb : '')
 
     let page = routes[parsedURL];
 
