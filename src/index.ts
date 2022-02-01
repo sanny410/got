@@ -18,20 +18,20 @@ const router = async () => {
     const footer = document.querySelector('footer') as HTMLElement;
     const header = document.querySelector('header') as HTMLElement;
 
+    header.innerHTML = await Header.render();
+    await Header.after_render();
     footer.innerHTML = await Footer.render();
     await Footer.after_render();
 
-    header.innerHTML = await  Header.render();
-    await Header.after_render();
 
     let request = Utils.parseRequestURL();
 
-    let parsedURL: string = (request.resource ? '/' + request.resource : '/') + (request.id ? '/:id' : '') + (request.verb ? '/' + request.verb : '')
-
+    let parsedURL = (request.resource ? '/' + request.resource : '/') + (request.id ? '/:id' : '') + (request.verb ? '/' + request.verb : '')
     let page = routes[parsedURL];
 
     content.innerHTML = await page.render();
     await page.after_render();
+
 }
 
 // Listen on hash change:
