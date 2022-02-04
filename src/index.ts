@@ -6,6 +6,7 @@ import Books from "./components/Books";
 import Characters from "./components/Characters";
 import Houses from "./components/Houses";
 
+
 const routes: {[index: string]:any} = {
     '/'    : MainPage,
     '/books': Books,
@@ -33,6 +34,7 @@ const router = async () => {
     await page.after_render();
 
 }
+
 
 // Listen on hash change:
 window.addEventListener('hashchange', router);

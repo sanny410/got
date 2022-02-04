@@ -4,10 +4,10 @@ const Header = {
         <img id="logo-got" src="../assets/img/footer-got.jpg" alt="got-logo">
         <nav class="menu-container">
             <ul class="menu">
-                <li class="menu_item">Main</li>
-                <li class="menu_item">Books</li>
-                <li class="menu_item">Characters</li>
-                <li class="menu_item">Houses</li>
+                <a href="#/"><li class="menu_item">Main</li></a>
+                <a href="#/books"><li class="menu_item">Books</li></a>
+                <a href="#/characters"><li class="menu_item">Characters</li></a>
+                <a href="#/houses"><li class="menu_item">Houses</li></a>
             </ul>
         </nav>
 `
