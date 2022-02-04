@@ -1,4 +1,4 @@
-import getResource from "../modules/post";
+import {getResource, BooksItem} from "../modules/post"
 import CharacterCard from "./CharacterCard";
 
 const Characters = {

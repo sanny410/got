@@ -10,7 +10,14 @@ async function getResource (url: string) {
     }
 }
 
+type BooksItem = {
+    url: string,
+    name: string,
+    authors: string,
+    released: string
+}
 
-export default getResource;
+
+export {getResource, BooksItem};
 
 
